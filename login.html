@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="./bootstrap/css/jumbotron.css" rel="stylesheet">
+</head>
+<body>
+    <p class="lead"><a href="admin_add.php">Add new book</a></p>
+	<a href="admin.html" class="btn btn-primary">Sign out!</a>
+	<table class="table" style="margin-top: 20px">
+		<tr>
+			<th>ISBN</th>
+			<th>Title</th>
+			<th>Author</th>
+			<th>Image</th>
+			<th>Description</th>
+			<th>Price</th>
+			<th>Publisher</th>
+			<th>&nbsp;</th>
+			<th>&nbsp;</th>
+		</tr>
+
+		<tr>
+			<td>978-1-49192-706-9</td>
+			<td>C# 6.0 in a Nutshell, 6th Edition</td>
+			<td>Joseph Albahari, Ben Albahari </td>
+			<td>c_sharp_6.jpg </td>
+			<td>When you have questions about C# 6.0 or the .NET CLR and its core Framework assemblies, this bestselling guide has the answers you need. C# has become a language of unusual flexibility and breadth since its premiere in 2000, but this continual growth means there's still much more to learn. Organized around concepts and use cases, this thoroughly updated sixth edition provides intermediate and advanced programmers with a concise map of C# and .NET knowledge. Dive in and discover why this Nutshell guide is considered the definitive reference on C#.</td>
+			<td>2000</td>
+			<td>O'Reilly Media</td>
+			<td><a href="admin_edit.php?bookisbn=<?php echo $row['book_isbn']; ?>">Edit</a></td>
+			<td><a href="admin_delete.php?bookisbn=<?php echo $row['book_isbn']; ?>">Delete</a></td>
+		</tr>
+		<tr>
+			<td>978-1-484217-26-9</td>
+			<td>C++ 14 Quick Syntax Reference, 2nd Edition </td>
+			<td>Mikael Olsson </td>
+			<td>c_14_quick.jpg </td>
+			<td>This updated handy quick C++ 14 guide is a condensed code and syntax reference based on the newly updated C++ 14 release of the popular programming language. It presents the essential C++ syntax in a well-organized format that can be used as a handy reference. You won't find any technical jargon, bloated samples, drawn out history lessons, or witty stories in this book. What you will find is a language reference that is concise, to the point and highly accessible. The book is packed with useful information and is a must-have for any C++ programmer. In the C++ 14 Quick Syntax Reference, Second Edition, you will find a concise reference to the C++ 14 language syntax. It has short, simple, and focused code examples. This book includes a well laid out table of contents and a comprehensive index allowing for easy review.</td>
+			<td>2000</td>
+			<td>Apress</td>
+			<td><a href="admin_edit.php?bookisbn=<?php echo $row['book_isbn']; ?>">Edit</a></td>
+			<td><a href="admin_delete.php?bookisbn=<?php echo $row['book_isbn']; ?>">Delete</a></td>
+		</tr>
+        <tr>
+			<td>978-1-484216-40-8 </td>
+			<td>Android Studio New Media Fundamentals </td>
+			<td>Wallace Jackson </td>
+			<td>android_studio.jpg </td>
+			<td>Android Studio New Media Fundamentals is a new media primer covering concepts central to multimedia production for Android including digital imagery, digital audio, digital video, digital illustration and 3D, using open source software packages such as GIMP, Audacity, Blender, and Inkscape. These professional software packages are used for this book because they are free for commercial use. The book builds on the foundational concepts of raster, vector, and waveform (audio), and gets more advanced as chapters progress, covering what new media assets are best for use with Android Studio as well as key factors regarding the data footprint optimization work process and why new media content and new media data optimization is so important.</td>
+			<td>2000</td>
+			<td>Apress</td>
+			<td><a href="admin_edit.php?bookisbn=<?php echo $row['book_isbn']; ?>">Edit</a></td>
+			<td><a href="admin_delete.php?bookisbn=<?php echo $row['book_isbn']; ?>">Delete</a></td>
+		</tr>
+	</table>
+
+</body>
+</html>
